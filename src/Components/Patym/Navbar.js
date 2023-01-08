@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-const logo = require("./images/logo.png");
-const signup = require("./images/signup.png");
+const logo = require("../images/logo.png");
+const signup = require("../images/signup.png");
 
 const Navbar = () => {
   let Links = [
@@ -24,7 +24,7 @@ const Navbar = () => {
           <ul
             className={`md:flex md:items-center md:pt-6 pt-2 space-x-8  left-0 md:static absolute md:shadow-none shadow-md w-[100%]  ${
               open ? "top-24" : "top-[-450px]"
-            }   `}
+            }`}
           >
             <li></li>
             {Links.map((link) => (
@@ -41,6 +41,8 @@ const Navbar = () => {
           </ul>
         </div>
 
+
+        
         <div
           className="logo cursor-pointer items-center md:pt-2 md:order-1 order-2 md:ml-0 ml-20 md:static 
          absolute md:mt-0 mt-2"
